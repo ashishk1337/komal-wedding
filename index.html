@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Namaskar! You are warmly invited to the wedding of Komal &amp; Ashish on Saturday, 19 December 2026, 12:15 PM at Imperial Palace, Chandrapur. Tap to open the invitation.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Komal &amp; Ashish – Wedding Invitation">
+<meta property="og:description" content="Namaskar! You are warmly invited to the wedding of Komal &amp; Ashish on Saturday, 19 December 2026, 12:15 PM at Imperial Palace, Chandrapur. Tap to open your invitation.">
+<meta property="og:image" content="https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/og-image.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <title>Komal &amp; Ashish – Mangal Parinay</title>
 <meta name="description" content="Join Ashish and Komal for their wedding on 19 December 2026 at Imperial Palace, Chandrapur.">
 <meta name="theme-color" content="#fbf3e4">
@@ -33,7 +40,7 @@ body{background:var(--b2);color:var(--tx);font-family:'Cormorant Garamond',Georg
 .lt i{display:block;width:1px;height:60px;background:var(--g2);margin:0 auto}
 .lt b{display:block;height:46px;border-radius:14px 14px 18px 18px;background:linear-gradient(var(--g3),var(--g2));box-shadow:0 0 28px 9px rgba(255,214,120,.55)}
 @keyframes sg{50%{transform:rotate(4deg)}}
-.hero>*:not(canvas):not(.fr):not(.cr):not(.vn):not(.lt):not(.mand){position:relative}
+.hero>*:not(canvas):not(.fr):not(.cr):not(.vn):not(.lt):not(.mand):not(.halo):not(.shock):not(.coin){position:relative}
 .sk{font-family:Cinzel,serif;font-weight:700;font-size:16px;letter-spacing:.1em;color:var(--ac);margin-top:6px}
 .ro{font-family:Cinzel,serif;font-weight:500;letter-spacing:.2em;font-size:13px;margin:14px 0 4px}
 .nm{font-family:'Playfair Display',Georgia,serif;font-style:italic;font-weight:800;font-size:60px;line-height:1.06;filter:drop-shadow(2px 3px 2px rgba(0,0,0,.25))}
@@ -165,8 +172,78 @@ button { -webkit-appearance:none; appearance:none; touch-action:manipulation; }
 .mapcard svg{display:block;margin:0 auto 10px;animation:pinb 2s ease-in-out infinite;filter:drop-shadow(0 6px 8px rgba(0,0,0,.4))}
 @keyframes pinb{50%{transform:translateY(-8px)}}
 .mapcard span{display:block}.mc1{font-family:Cinzel,serif;font-weight:700;font-size:20px;letter-spacing:.12em}.mc2{font-size:17px;color:#f6dcc0;margin-top:4px}.mc3{font-family:Cinzel,serif;font-size:10.5px;letter-spacing:.22em;color:#fff3d6;margin-top:14px;padding-top:12px;border-top:1px solid rgba(246,220,192,.4)}
+
+/* ===== 3D + OPENING ===== */
+.hero{perspective:1100px;--tx:0;--ty:0;--sy:0}
+.hero .nm{filter:drop-shadow(1px 1px 0 #b58420) drop-shadow(2px 2px 0 #96681a) drop-shadow(3px 3px 0 #7d520e) drop-shadow(5px 10px 9px rgba(40,15,0,.4))}
+.pn.gt,.nx.gt{filter:drop-shadow(1px 1px 0 #96681a) drop-shadow(2px 3px 0 #6e460b) drop-shadow(3px 9px 8px rgba(40,15,0,.35))}
+h2{text-shadow:0 1px 0 rgba(255,255,255,.7),0 3px 4px rgba(0,0,0,.22)}
+.hero .nm{translate:calc(var(--tx)*16px) calc(var(--ty)*10px - var(--sy)*.12px)}
+.hero .mp{translate:calc(var(--tx)*-20px) calc(var(--ty)*-8px + var(--sy)*.05px);rotate:0 1 0 calc(var(--tx)*7deg)}
+.hero>svg:first-of-type{translate:calc(var(--tx)*24px) calc(var(--ty)*16px)}
+.hero .sk,.hero .ro,.hero .am{translate:calc(var(--tx)*10px) calc(var(--ty)*6px)}
+.hero .mand{translate:calc(var(--tx)*-30px) calc(var(--ty)*-20px)}
+.halo{position:absolute;left:50%;top:136px;width:150px;height:150px;margin:-75px 0 0 -75px;border-radius:50%;border:1.5px dashed var(--g2);opacity:.75;pointer-events:none;translate:calc(var(--tx)*24px) calc(var(--ty)*16px);animation:rt 24s linear infinite,fi2 1.4s ease 3.4s backwards}
+.halo::before,.halo::after{content:"";position:absolute;border-radius:50%}
+.halo::before{left:-26px;right:-26px;top:-26px;bottom:-26px;border:1px dotted var(--g2);animation:rt 40s linear infinite reverse}
+.halo::after{width:10px;height:10px;left:50%;top:-5px;margin-left:-5px;background:var(--g1);box-shadow:0 0 14px 4px rgba(255,214,120,.9)}
+@keyframes fi2{from{opacity:0}}
+.hero .ro,.hero .sk{animation:rise 1.1s ease 3.4s backwards,lsp 1.6s ease 3.4s backwards}
+@keyframes lsp{from{letter-spacing:.7em}}
+.dr{transform-box:fill-box;transform-origin:50% 0;animation:swy 5s ease-in-out infinite}.dr2{animation-delay:1.2s}
+@keyframes swy{50%{transform:skewX(4deg) scaleX(1.06)}}
+.cpl{transform-box:fill-box;transform-origin:50% 100%;animation:brt 4s ease-in-out infinite}
+@keyframes brt{50%{transform:translateY(-4px) scale(1.015)}}
+#gr circle{animation:tw2 2.2s ease-in-out infinite}#gr circle:nth-child(3n){animation-delay:.5s}#gr circle:nth-child(3n+1){animation-delay:1.1s}
+@keyframes tw2{50%{opacity:.45;transform:scale(.8)}}
+.lt b{animation:lf 2.6s ease-in-out infinite}@keyframes lf{50%{box-shadow:0 0 40px 14px rgba(255,214,120,.8)}}
+.btn2{box-shadow:0 5px 0 #2e0711,0 12px 20px rgba(60,10,20,.4),inset 0 1px 0 rgba(255,255,255,.35);transition:transform .12s,box-shadow .12s}
+.btn2:active{transform:translateY(4px);box-shadow:0 1px 0 #2e0711,0 4px 8px rgba(60,10,20,.4),inset 0 1px 0 rgba(255,255,255,.25)}
+.tilt{transition:transform .15s ease-out;will-change:transform}
+.seal{animation:coin 9s ease-in-out infinite}
+@keyframes coin{0%{transform:perspective(600px) rotateY(0)}35%,100%{transform:perspective(600px) rotateY(360deg)}}
+#wm{position:fixed;left:50%;bottom:calc(26px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:75;max-width:88%;text-align:center;font-family:Cinzel,serif;font-weight:700;font-size:10.5px;letter-spacing:.12em;line-height:1.5;color:#ffe9b0;background:linear-gradient(135deg,var(--p1),var(--p2));border:1.5px solid var(--g2);border-radius:26px;padding:10px 18px;box-shadow:0 6px 0 rgba(46,7,17,.55),0 14px 30px rgba(0,0,0,.4);opacity:0;pointer-events:none;animation:wmi 6.5s ease 5.2s both}
+@keyframes wmi{0%{opacity:0;transform:translateX(-50%) translateY(30px) scale(.9)}10%,85%{opacity:1;transform:translateX(-50%)}100%{opacity:0;transform:translateX(-50%) translateY(20px)}}
+
+/* ===== STRONGER ===== */
+.hero{animation:dolly 3.4s cubic-bezier(.2,.8,.2,1) 3.2s backwards}
+@keyframes dolly{from{transform:scale(1.22);filter:brightness(.6)}}
+.hero .nm{filter:drop-shadow(1px 1px 0 #c8962c) drop-shadow(2px 2px 0 #b58420) drop-shadow(3px 3px 0 #96681a) drop-shadow(4px 4px 0 #7d520e) drop-shadow(5px 5px 0 #664108) drop-shadow(6px 6px 0 #4f3106) drop-shadow(10px 18px 14px rgba(40,15,0,.55)) drop-shadow(0 0 20px rgba(255,205,110,.6))}
+.pn.gt,.nx.gt{filter:drop-shadow(1px 1px 0 #b58420) drop-shadow(2px 2px 0 #96681a) drop-shadow(3px 4px 0 #6e460b) drop-shadow(5px 12px 10px rgba(40,15,0,.4)) drop-shadow(0 0 14px rgba(255,205,110,.45))}
+.hero .nm{translate:calc(var(--tx)*36px) calc(var(--ty)*22px - var(--sy)*.18px)}
+.hero .mp{translate:calc(var(--tx)*-46px) calc(var(--ty)*-18px + var(--sy)*.08px);rotate:0 1 0 calc(var(--tx)*15deg)}
+.hero>svg:first-of-type{translate:calc(var(--tx)*50px) calc(var(--ty)*34px)}
+.halo{translate:calc(var(--tx)*50px) calc(var(--ty)*34px)}
+.hero .sk,.hero .ro,.hero .am{translate:calc(var(--tx)*22px) calc(var(--ty)*14px)}
+.hero .mand{translate:calc(var(--tx)*-70px) calc(var(--ty)*-44px)}
+@keyframes lti{from{opacity:0;transform:translateY(130px) rotateX(125deg) rotateZ(-22deg) scale(2.3);filter:blur(14px)}}
+.hero::before{background:repeating-conic-gradient(from 0deg,rgba(255,215,130,.5) 0 5deg,transparent 5deg 15deg);animation:rt 40s linear infinite}
+.hero::after{background:linear-gradient(100deg,transparent,rgba(255,240,180,.72),transparent);animation-duration:5s}
+.shock{position:absolute;left:50%;top:300px;width:24px;height:24px;margin:-12px 0 0 -12px;border-radius:50%;border:3px solid rgba(255,214,120,.95);box-shadow:0 0 20px rgba(255,214,120,.9);pointer-events:none;animation:shock 2.2s ease-out 4.9s 2 backwards}
+@keyframes shock{from{transform:scale(1);opacity:1}to{transform:scale(34);opacity:0}}
+.coin{position:absolute;top:-30px;width:18px;height:18px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff3c4,#e8c27a 45%,#9a6c1a);box-shadow:0 0 10px rgba(255,210,120,.9);pointer-events:none;animation:cfall var(--t) linear infinite,cspin 1.1s linear infinite}
+@keyframes cfall{from{translate:0 -40px}to{translate:var(--dx) 960px}}
+@keyframes cspin{to{transform:rotateY(360deg)}}
+.js .rv{transform:perspective(900px) translateY(80px) rotateX(-22deg) scale(.9);transform-origin:50% 100%}
+.js .rv.on{transform:none}
+.ev::before{animation:rt 4s linear infinite}
+.seal{animation-duration:5s}
+.btn2{animation:none}
+
+/* ===== CALMER OPENING PAGE ===== */
+.hero{animation:none}
+.hero .nm{filter:drop-shadow(1px 1px 0 #b58420) drop-shadow(2px 2px 0 #96681a) drop-shadow(3px 3px 0 #7d520e) drop-shadow(4px 8px 8px rgba(40,15,0,.35))}
+.hero .nm{translate:calc(var(--tx)*14px) calc(var(--ty)*9px - var(--sy)*.1px)}
+.hero .mp{translate:calc(var(--tx)*-16px) calc(var(--ty)*-6px + var(--sy)*.05px);rotate:0 1 0 calc(var(--tx)*5deg)}
+.hero>svg:first-of-type,.halo{translate:calc(var(--tx)*18px) calc(var(--ty)*12px)}
+.hero .sk,.hero .ro,.hero .am{translate:calc(var(--tx)*8px) calc(var(--ty)*5px)}
+.hero .mand{translate:calc(var(--tx)*-22px) calc(var(--ty)*-14px)}
+@keyframes lti{from{opacity:0;transform:translateY(40px) rotateX(70deg) scale(1.2);filter:blur(6px)}}
+.hero::before{background:repeating-conic-gradient(from 0deg,rgba(255,215,130,.2) 0 5deg,transparent 5deg 15deg);animation:rt 90s linear infinite}
+.hero::after{background:linear-gradient(100deg,transparent,rgba(255,238,175,.32),transparent);animation-duration:9s}
+.shock,.coin{display:none !important}
 </style></head><body>
-<canvas id="pt" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:4"></canvas><div id="pb"></div>
+<canvas id="pt" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:4"></canvas><div id="pb"></div><div id="wm" data-msg="You are warmly welcome to our wedding invitation. Scroll down ↓"></div>
 <svg width="0" height="0" style="position:absolute"><defs>
 <symbol id="cor" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M3 61 V22 Q3 3 22 3 H61"/><path d="M11 61 V28 Q11 11 28 11 H61" opacity=".5"/><circle cx="12" cy="12" r="4" fill="currentColor"/><path d="M20 20 q10 -2 14 -12 M20 20 q-2 10 -12 14"/></g></symbol>
 <symbol id="dvs" viewBox="0 0 260 26"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 13 H100 M160 13 H254"/><path d="M130 3 L142 13 L130 23 L118 13Z" fill="currentColor"/><path d="M112 13 q-8 -9 -16 0 q8 9 16 0 M148 13 q8 -9 16 0 q-8 9 -16 0"/></g></symbol>
@@ -181,6 +258,7 @@ button { -webkit-appearance:none; appearance:none; touch-action:manipulation; }
  <div class="vn l" id="vl"></div><div class="vn r" id="vr"></div>
  <div class="lt" style="left:64px"><i></i><b></b></div><div class="lt" style="left:116px;animation-delay:.8s"><i style="height:36px"></i><b></b></div>
  <div class="lt" style="right:116px;animation-delay:1.4s"><i style="height:36px"></i><b></b></div><div class="lt" style="right:64px;animation-delay:.4s"><i></i><b></b></div>
+ <div class="halo"></div><div class="shock"></div>
  <svg width="66" height="66" style="margin-top:58px;color:var(--g2)"><use href="#wh"/></svg>
  <p class="sk">॥ ATTA DEEP BHAVA ॥</p>
  <p class="ro">THE ROYAL WEDDING</p>
@@ -188,11 +266,11 @@ button { -webkit-appearance:none; appearance:none; touch-action:manipulation; }
  <p class="ro">ARE GETTING MARRIED</p>
  <svg class="mp" viewBox="0 0 420 320"><defs><linearGradient id="gg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8e3a0"/><stop offset="1" stop-color="#c9953a"/></linearGradient><radialGradient id="gl"><stop offset="0" stop-color="#fff3c4" stop-opacity=".9"/><stop offset="1" stop-color="#fff3c4" stop-opacity="0"/></radialGradient></defs>
   <circle cx="210" cy="190" r="150" fill="url(#gl)"/><ellipse cx="210" cy="302" rx="190" ry="14" fill="#000" opacity=".18"/>
-  <path d="M100 124 Q116 210 98 292 L132 292 Q126 210 134 124Z" fill="#fff" opacity=".88"/><path d="M320 124 Q304 210 322 292 L288 292 Q294 210 286 124Z" fill="#fff" opacity=".88"/>
+  <path class="dr dr1" d="M100 124 Q116 210 98 292 L132 292 Q126 210 134 124Z" fill="#fff" opacity=".88"/><path class="dr dr2" d="M320 124 Q304 210 322 292 L288 292 Q294 210 286 124Z" fill="#fff" opacity=".88"/>
   <g fill="#f7e9cf" stroke="url(#gg)" stroke-width="3"><rect x="56" y="112" width="22" height="180"/><rect x="124" y="112" width="18" height="180"/><rect x="278" y="112" width="18" height="180"/><rect x="342" y="112" width="22" height="180"/></g>
   <path d="M46 122 H374 L354 100 H66Z" fill="url(#gg)"/><path d="M92 100 Q210 -34 328 100Z" fill="url(#gg)"/><path d="M150 100 Q210 10 270 100 M120 100 Q210 -10 300 100" fill="none" stroke="#fff3c4" stroke-width="2" opacity=".7"/><path d="M210 12 V-4" stroke="#b98a2f" stroke-width="4"/><circle cx="210" cy="-6" r="5" fill="#e8c27a"/>
   <g id="gr"></g>
-  <g transform="translate(138 138) scale(.9)" stroke="none">
+  <g class="cpl"><g transform="translate(138 138) scale(.9)" stroke="none">
    <rect x="34" y="100" width="14" height="50" rx="5" fill="#f4ead2"/><rect x="52" y="100" width="14" height="50" rx="5" fill="#f4ead2"/>
    <path d="M30 36 Q50 28 70 36 L74 104 L26 104Z" fill="#e6c27a"/><path d="M34 36 L38 104 M66 36 L62 104" style="stroke:var(--lh)" stroke-width="7"/>
    <circle cx="50" cy="20" r="12" fill="#e2a982"/><ellipse cx="50" cy="10" rx="16" ry="9" style="fill:var(--lh)"/>
@@ -200,7 +278,7 @@ button { -webkit-appearance:none; appearance:none; touch-action:manipulation; }
    <path d="M88 20 Q86 2 102 4 Q118 6 114 26 L126 122 Q104 84 92 44Z" style="fill:var(--lh)" opacity=".5"/>
    <path d="M122 70 Q134 112 146 152 Q104 160 62 152 Q82 112 94 70Z" style="fill:var(--lh)"/><path d="M90 40 Q104 34 118 40 L114 74 L94 74Z" style="fill:var(--lh)"/>
    <circle cx="104" cy="24" r="11" fill="#e2a982"/><circle cx="118" cy="14" r="7" fill="#241210"/>
-   <path d="M96 56 L82 86" style="stroke:var(--lh)" stroke-width="8" stroke-linecap="round"/><circle cx="84" cy="88" r="5" fill="#e2a982"/></g>
+   <path d="M96 56 L82 86" style="stroke:var(--lh)" stroke-width="8" stroke-linecap="round"/><circle cx="84" cy="88" r="5" fill="#e2a982"/></g></g>
  </svg>
  <p class="scr">SCROLL ⌄</p>
 </header>
@@ -240,7 +318,8 @@ button { -webkit-appearance:none; appearance:none; touch-action:manipulation; }
  <p class="sub">“Thank you for being part of our celebration”</p>
  <svg class="dv" style="margin:30px auto 14px"><use href="#dvs"/></svg>
  <p class="lb gt" style="font-size:34px">With warm regards</p><p class="cn gt">Ratnaparkhi Family</p>
- <p class="pp">Mrs. Jayatai &amp; Mr. Siddharth Hiraman Ratnaparkhi<br>Piyush Ratnaparkhi &amp; Deepika Ratnaparkhi<br>Piyush Enclave, J.B. Nagar, Datala Road, Chandrapur</p>
+ <p class="pp">Mrs. Jayatai &amp; Mr. Siddharth Hiraman Ratnaparkhi<br>Deepika Ratnaparkhi &amp; Piyush Ratnaparkhi<br>Piyush Enclave, J.B. Nagar, Datala Road, Chandrapur</p>
+ <p class="qt gt" style="font-size:27px;margin-top:22px">“Bua ki shadi me jarur aana Divyush”</p>
  <p class="k" style="margin-top:22px">CONTACT</p><p class="cn">9422835909</p><p class="cn" style="margin-top:2px">8767578762</p>
  <svg class="seal" viewBox="0 0 120 120" fill="none"><circle cx="60" cy="60" r="56" stroke="#d9a94a" stroke-width="1.5"/><circle cx="60" cy="60" r="49" stroke="#d9a94a" stroke-width=".8"/><text x="60" y="71" text-anchor="middle" font-family="Playfair Display,Georgia,serif" font-style="italic" font-weight="800" font-size="32" fill="#d9a94a" stroke="none">K &amp; A</text></svg>
  <p class="hg">#KOMALWEDSASHISH</p></div>
@@ -323,6 +402,59 @@ button { -webkit-appearance:none; appearance:none; touch-action:manipulation; }
   try{var seen=false,evs=document.querySelectorAll('.ev');
     if('IntersectionObserver' in window&&evs.length){var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting&&!seen){seen=true;var r=x.target.getBoundingClientRect();burst(r.left+r.width/2,Math.max(80,r.top+60),60);io.disconnect();}});},{threshold:.5});io.observe(evs[0]);}
   }catch(e){}
+})();
+</script>
+<script>
+(function(){
+  'use strict';
+  var wm=document.getElementById('wm');
+  try{var n=(new URLSearchParams(window.location.search).get('to')||'').replace(/[<>]/g,'').slice(0,40).trim();
+    if(wm)wm.textContent=(n?'Namaskar, '+n+'!':'Namaskar!')+' '+wm.getAttribute('data-msg');}catch(e){}
+  if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var h=document.querySelector('.hero');if(!h)return;
+  function setv(x,y){h.style.setProperty('--tx',x.toFixed(3));h.style.setProperty('--ty',y.toFixed(3));}
+  var act=0;
+  function pt(e){act=Date.now();var p=e.touches&&e.touches[0]?e.touches[0]:e;setv((p.clientX/window.innerWidth-.5)*2,(p.clientY/window.innerHeight-.5)*2);}
+  window.addEventListener('touchmove',pt,{passive:true});window.addEventListener('mousemove',pt,{passive:true});
+  if(window.DeviceOrientationEvent&&typeof window.DeviceOrientationEvent.requestPermission!=='function'){
+    window.addEventListener('deviceorientation',function(e){if(e.gamma==null||e.beta==null)return;act=Date.now();setv(Math.max(-1,Math.min(1,e.gamma/25)),Math.max(-1,Math.min(1,(e.beta-45)/25)));},{passive:true});}
+  var t0=Date.now();
+  (function idle(){if(Date.now()-act>2500){var t=(Date.now()-t0)/1000;setv(Math.sin(t*.7)*.7,Math.cos(t*.5)*.45);}requestAnimationFrame(idle);})();
+  window.addEventListener('scroll',function(){h.style.setProperty('--sy',Math.min(window.scrollY||0,900));},{passive:true});
+  Array.prototype.forEach.call(document.querySelectorAll('.ev,.gc,.mapcard'),function(c){
+    c.classList.add('tilt');
+    function mv(e){var p=e.touches&&e.touches[0]?e.touches[0]:e,r=c.getBoundingClientRect(),x=(p.clientX-r.left)/r.width-.5,y=(p.clientY-r.top)/r.height-.5;c.style.transform='perspective(700px) rotateX('+(-y*14).toFixed(1)+'deg) rotateY('+(x*14).toFixed(1)+'deg) scale(1.02)';}
+    function rs(){c.style.transform='';}
+    c.addEventListener('touchmove',mv,{passive:true});c.addEventListener('mousemove',mv);
+    ['touchend','touchcancel','mouseleave'].forEach(function(n){c.addEventListener(n,rs);});
+  });
+})();
+</script>
+<script>
+(function(){
+  'use strict';
+  if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var h=document.querySelector('.hero');if(!h)return;
+  for(var i=0;i<12;i++){var d=document.createElement('i');d.className='coin';d.style.left=(4+Math.random()*92)+'%';d.style.setProperty('--t',(6+Math.random()*6)+'s');d.style.setProperty('--dx',((Math.random()-.5)*160)+'px');d.style.animationDelay=(4.5+Math.random()*6)+'s,'+(Math.random())+'s';d.style.width=d.style.height=(11+Math.random()*10)+'px';h.appendChild(d);}
+  Array.prototype.forEach.call(document.querySelectorAll('.ev,.gc,.mapcard'),function(c){
+    function mv(e){var p=e.touches&&e.touches[0]?e.touches[0]:e,r=c.getBoundingClientRect(),x=(p.clientX-r.left)/r.width-.5,y=(p.clientY-r.top)/r.height-.5;c.style.transform='perspective(600px) rotateX('+(-y*28).toFixed(1)+'deg) rotateY('+(x*28).toFixed(1)+'deg) scale(1.05)';}
+    c.addEventListener('touchmove',mv,{passive:true});c.addEventListener('mousemove',mv);
+    c.addEventListener('touchstart',function(){if(navigator.vibrate)navigator.vibrate(12);},{passive:true});
+  });
+  var cv=document.createElement('canvas');cv.style.cssText='position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:5';document.body.appendChild(cv);
+  var c=cv.getContext('2d');if(!c)return;var W=0,H=0,R=[],P=[],cols=['#ffd98a','#ff7a9a','#fff3c4','#ffb347','#f2a7b8','#ffffff'];
+  function rs(){var q=Math.min(window.devicePixelRatio||1,1.5);W=window.innerWidth;H=window.innerHeight;cv.width=Math.round(W*q);cv.height=Math.round(H*q);c.setTransform(q,0,0,q,0,0);}rs();window.addEventListener('resize',rs,{passive:true});
+  function launch(){R.push({x:W*(.15+Math.random()*.7),y:H,ty:H*(.14+Math.random()*.32),vy:-10-Math.random()*3});}
+  function boom(x,y){var col=cols[Math.floor(Math.random()*cols.length)],col2=cols[Math.floor(Math.random()*cols.length)],n=70;for(var k=0;k<n;k++){var a=k/n*6.283,s=(k%2?2.2:4.2)+Math.random()*1.3;P.push({x:x,y:y,vx:Math.cos(a)*s,vy:Math.sin(a)*s,l:1,c:k%2?col:col2,t:[]});}}
+  var started=Date.now()+5200,alive=true;
+  (function sched(){var el=Date.now()-started;if(el>0&&(window.scrollY||0)<600&&!document.hidden)launch();setTimeout(sched,el<22000?1500:6000);})();
+  function frame(){if(!alive)return;c.clearRect(0,0,W,H);c.globalCompositeOperation='lighter';
+    for(var i=R.length-1;i>=0;i--){var r=R[i];r.y+=r.vy;r.vy*=.985;c.fillStyle='#ffe9b0';c.beginPath();c.arc(r.x,r.y,2.4,0,6.3);c.fill();if(r.y<=r.ty||r.vy>-1.2){boom(r.x,r.y);R.splice(i,1);}}
+    for(var j=P.length-1;j>=0;j--){var p=P[j];p.t.push([p.x,p.y]);if(p.t.length>5)p.t.shift();p.x+=p.vx;p.y+=p.vy;p.vy+=.05;p.vx*=.985;p.vy*=.985;p.l-=.014;if(p.l<=0){P.splice(j,1);continue;}
+      c.strokeStyle=p.c;c.globalAlpha=p.l;c.lineWidth=2.2;c.beginPath();c.moveTo(p.t[0][0],p.t[0][1]);c.lineTo(p.x,p.y);c.stroke();}
+    c.globalAlpha=1;c.globalCompositeOperation='source-over';requestAnimationFrame(frame);}
+  frame();
+  document.addEventListener('visibilitychange',function(){if(document.hidden){alive=false;}else if(!alive){alive=true;frame();}});
 })();
 </script>
 </body></html>
